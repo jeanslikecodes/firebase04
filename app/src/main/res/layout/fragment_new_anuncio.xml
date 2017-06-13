@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewAnuncioActivity">
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="6dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descricao"
+            android:ems="10"
+            android:maxLines="1"
+            android:layout_marginTop="20dp"
+            android:id="@+id/et_descricao" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Tamanho"
+            android:id="@+id/et_tamanho"/>
+
+        <EditText
+            android:id="@+id/et_preco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preço" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_salvar"
+            android:background="@color/colorAccent"
+            android:text="SALVAR"
+            android:textSize="20dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_excluir"
+            android:text="EXCLUIR"
+            android:visibility="gone"
+            android:textSize="20dp"/>
+
+    </LinearLayout>
+</ScrollView>
+
+</RelativeLayout>
